@@ -5,13 +5,15 @@
 Using finite jets, we give an alternative proof of the totient-square period conjecture in Peter Bala's comment of 16 February 2026 on OEIS A281181, revision 103, previously proved by Lien-Hung Su (2026, Theorem 3.2 and Corollary 3.3), and extend the argument to every positive integer flow exponent. For C'=C^q S, S'=C^(q+1), C(0)=1 and S(0)=0, the numbers A(q,e,n)=(2n)![t^(2n)]C(t)^e are integers for every positive integer q and nonnegative e, and A(q,e,n+phi(k)^2) is congruent to A(q,e,n) modulo k for every k>=1 and n>=k^2. The proof uses characteristic-p finite jets, commuting matrices, a separate two-adic operator and the Chinese remainder theorem. Five posed conjectures, nine further column specializations and one full-index interlacing are covered.
 
 - PDF: [frozen public file](paper.pdf)
+- DOI: [https://doi.org/10.5281/zenodo.24411944](https://doi.org/10.5281/zenodo.24411944)
+- Concept DOI: [https://doi.org/10.5281/zenodo.24411943](https://doi.org/10.5281/zenodo.24411943)
 - License: CC-BY-4.0
 - Version: 3
 - Mathesis record: [balaper-a281181-phi2period](https://mathesis-omega-research.apps.chrono-ai.fun/papers/balaper-a281181-phi2period?version=3)
 
 ## How to cite
 
-Haobo Ma, Wenlin Zhang (2026). A jet-space proof and extension of Su's theorem on Bala's totient-square period conjectures. Mathesis, version 3. https://mathesis-omega-research.apps.chrono-ai.fun/papers/balaper-a281181-phi2period?version=3
+Haobo Ma, Wenlin Zhang (2026). A jet-space proof and extension of Su's theorem on Bala's totient-square period conjectures. Mathesis, version 3. https://doi.org/10.5281/zenodo.24411944
 
 ## Statement progress
 
