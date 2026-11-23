@@ -1,0 +1,21 @@
+{
+  "id": "balaper-a281181-phi2period",
+  "revision": 3,
+  "problem_ids": [
+    "balaper-a281181-phi2period",
+    "balaper-a281183-phi2period",
+    "balaper-a281184-phi2period",
+    "balaper-phi2period",
+    "balaper-a281440-phi2period"
+  ],
+  "topic": "Peter Bala's eventual totient-square periods for inverse-function derivative sequences",
+  "title": "A jet-space proof and extension of Su's theorem on Bala's totient-square period conjectures",
+  "creators": [
+    {"name": "Ma, Haobo", "affiliation": "ChronoAI Pte Ltd, Singapore"},
+    {"name": "Zhang, Wenlin", "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore"}
+  ],
+  "abstract": "Using finite jets, we give an alternative proof of the totient-square period conjecture in Peter Bala's comment of 16 February 2026 on OEIS A281181, revision 103, previously proved by Lien-Hung Su (2026, Theorem 3.2 and Corollary 3.3), and extend the argument to every positive integer flow exponent. For C'=C^q S, S'=C^(q+1), C(0)=1 and S(0)=0, the numbers A(q,e,n)=(2n)![t^(2n)]C(t)^e are integers for every positive integer q and nonnegative e, and A(q,e,n+phi(k)^2) is congruent to A(q,e,n) modulo k for every k>=1 and n>=k^2. The proof uses characteristic-p finite jets, commuting matrices, a separate two-adic operator and the Chinese remainder theorem. Five posed conjectures, nine further column specializations and one full-index interlacing are covered.",
+  "summary": "An alternative proof of Su's results on five conjectures of Peter Bala, extending the square-totient shift to every positive integer flow exponent with sufficient bound n>=k^2. Fifteen OEIS entries have explicit coverage mappings; A281428's stronger original conjectures are cited from Su, not reproved.",
+  "license": "cc-by-4.0",
+  "evidence_url": "https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281181TotientSquarePeriod.lean"
+}

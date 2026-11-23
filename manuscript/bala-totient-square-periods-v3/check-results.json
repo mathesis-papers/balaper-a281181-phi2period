@@ -1,0 +1,501 @@
+{
+  "all_index_finite_modulus_certificates": [
+    {
+      "column_start": 4,
+      "columns": 5,
+      "consecutive_zero_differences": 2,
+      "modulus": 2,
+      "period": 1
+    },
+    {
+      "column_start": 9,
+      "columns": 5,
+      "consecutive_zero_differences": 3,
+      "modulus": 3,
+      "period": 4
+    },
+    {
+      "column_start": 16,
+      "columns": 5,
+      "consecutive_zero_differences": 4,
+      "modulus": 4,
+      "period": 4
+    },
+    {
+      "column_start": 25,
+      "columns": 5,
+      "consecutive_zero_differences": 5,
+      "modulus": 5,
+      "period": 16
+    },
+    {
+      "column_start": 36,
+      "columns": 5,
+      "consecutive_zero_differences": 6,
+      "modulus": 6,
+      "period": 4
+    },
+    {
+      "column_start": 49,
+      "columns": 5,
+      "consecutive_zero_differences": 7,
+      "modulus": 7,
+      "period": 36
+    },
+    {
+      "column_start": 64,
+      "columns": 5,
+      "consecutive_zero_differences": 8,
+      "modulus": 8,
+      "period": 16
+    },
+    {
+      "column_start": 81,
+      "columns": 5,
+      "consecutive_zero_differences": 9,
+      "modulus": 9,
+      "period": 36
+    },
+    {
+      "column_start": 100,
+      "columns": 5,
+      "consecutive_zero_differences": 10,
+      "modulus": 10,
+      "period": 16
+    },
+    {
+      "column_start": 121,
+      "columns": 5,
+      "consecutive_zero_differences": 11,
+      "modulus": 11,
+      "period": 100
+    },
+    {
+      "column_start": 144,
+      "columns": 5,
+      "consecutive_zero_differences": 12,
+      "modulus": 12,
+      "period": 16
+    },
+    {
+      "column_start": 169,
+      "columns": 5,
+      "consecutive_zero_differences": 13,
+      "modulus": 13,
+      "period": 144
+    },
+    {
+      "column_start": 196,
+      "columns": 5,
+      "consecutive_zero_differences": 14,
+      "modulus": 14,
+      "period": 36
+    },
+    {
+      "column_start": 225,
+      "columns": 5,
+      "consecutive_zero_differences": 15,
+      "modulus": 15,
+      "period": 64
+    },
+    {
+      "column_start": 256,
+      "columns": 5,
+      "consecutive_zero_differences": 16,
+      "modulus": 16,
+      "period": 64
+    },
+    {
+      "column_start": 289,
+      "columns": 5,
+      "consecutive_zero_differences": 17,
+      "modulus": 17,
+      "period": 256
+    },
+    {
+      "column_start": 324,
+      "columns": 5,
+      "consecutive_zero_differences": 18,
+      "modulus": 18,
+      "period": 36
+    },
+    {
+      "column_start": 361,
+      "columns": 5,
+      "consecutive_zero_differences": 19,
+      "modulus": 19,
+      "period": 324
+    },
+    {
+      "column_start": 400,
+      "columns": 5,
+      "consecutive_zero_differences": 20,
+      "modulus": 20,
+      "period": 64
+    },
+    {
+      "column_start": 441,
+      "columns": 5,
+      "consecutive_zero_differences": 21,
+      "modulus": 21,
+      "period": 144
+    },
+    {
+      "column_start": 484,
+      "columns": 5,
+      "consecutive_zero_differences": 22,
+      "modulus": 22,
+      "period": 100
+    },
+    {
+      "column_start": 529,
+      "columns": 5,
+      "consecutive_zero_differences": 23,
+      "modulus": 23,
+      "period": 484
+    },
+    {
+      "column_start": 576,
+      "columns": 5,
+      "consecutive_zero_differences": 24,
+      "modulus": 24,
+      "period": 64
+    }
+  ],
+  "arithmetic": "exact integers and rational numbers",
+  "coefficient_identities": [
+    {
+      "exact_digits": 1222,
+      "exact_index": 257,
+      "exact_value_mod_97": 6,
+      "exact_value_sha256": "7054d20c0902a26cc566732b8efae087d73999e57fe43821a546d6a1bff8caa2",
+      "ode_agreement_indices": [
+        1,
+        13
+      ],
+      "sequence": "A281180",
+      "source_initial_terms": 8
+    },
+    {
+      "exact_digits": 1219,
+      "exact_index": 256,
+      "exact_value_mod_97": 52,
+      "exact_value_sha256": "77356b9b0a1407c90140ff500c1a89b64d0ad14c431de2d77a9825cfe41c3594",
+      "ode_agreement_indices": [
+        0,
+        12
+      ],
+      "sequence": "A281181",
+      "source_initial_terms": 8
+    },
+    {
+      "exact_digits": 1220,
+      "exact_index": 256,
+      "exact_value_mod_97": 49,
+      "exact_value_sha256": "5c16f67268d459927c2160bdfce8d7d172bcc1997bed89ceb74dd0fb40d09950",
+      "ode_agreement_indices": [
+        0,
+        12
+      ],
+      "sequence": "A281183",
+      "source_initial_terms": 8
+    },
+    {
+      "exact_digits": 1221,
+      "exact_index": 256,
+      "exact_value_mod_97": 78,
+      "exact_value_sha256": "ec18bbc92270c484d347e4b572921b82afafbcdcbca6d9f6adcc4566eee4bd30",
+      "ode_agreement_indices": [
+        0,
+        12
+      ],
+      "sequence": "A281184",
+      "source_initial_terms": 8
+    },
+    {
+      "exact_digits": 1322,
+      "exact_index": 256,
+      "exact_value_mod_97": 17,
+      "exact_value_sha256": "d0e53a84d1b7dc7bd3f3e4f6550f4eae64af8b473de2b0c4231b6cf60222e045",
+      "ode_agreement_indices": [
+        0,
+        12
+      ],
+      "sequence": "A281440",
+      "source_initial_terms": 8
+    }
+  ],
+  "constant_residue_certificate": {
+    "initial_zero_differences": 12,
+    "modulus": 12,
+    "sequence": "A281181",
+    "value": 1
+  },
+  "geometric_column_certificate": {
+    "modulus": 13,
+    "multiplier": 7,
+    "sequence": "A281181",
+    "shift": 6,
+    "zero_differences": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "least_period_certificates": [
+    {
+      "dimension": 7,
+      "least_period": 18,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 9,
+          "index": 1,
+          "prime_divisor": 2,
+          "values": [
+            1,
+            6
+          ]
+        },
+        {
+          "excluded_shift": 6,
+          "index": 1,
+          "prime_divisor": 3,
+          "values": [
+            1,
+            2
+          ]
+        }
+      ],
+      "modulus": 7,
+      "sequence": "A281180",
+      "start_index": 1,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 10,
+      "least_period": 8,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 4,
+          "index": 0,
+          "prime_divisor": 2,
+          "values": [
+            1,
+            9
+          ]
+        }
+      ],
+      "modulus": 10,
+      "sequence": "A281181",
+      "start_index": 0,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 9,
+      "least_period": 3,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 1,
+          "index": 1,
+          "prime_divisor": 3,
+          "values": [
+            1,
+            4
+          ]
+        }
+      ],
+      "modulus": 9,
+      "sequence": "A281181",
+      "start_index": 1,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 13,
+      "least_period": 72,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 36,
+          "index": 0,
+          "prime_divisor": 2,
+          "values": [
+            1,
+            12
+          ]
+        },
+        {
+          "excluded_shift": 24,
+          "index": 0,
+          "prime_divisor": 3,
+          "values": [
+            1,
+            9
+          ]
+        }
+      ],
+      "modulus": 13,
+      "sequence": "A281181",
+      "start_index": 0,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 11,
+      "least_period": 25,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 5,
+          "index": 1,
+          "prime_divisor": 5,
+          "values": [
+            2,
+            10
+          ]
+        }
+      ],
+      "modulus": 11,
+      "sequence": "A281183",
+      "start_index": 1,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 11,
+      "least_period": 25,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 5,
+          "index": 1,
+          "prime_divisor": 5,
+          "values": [
+            3,
+            4
+          ]
+        }
+      ],
+      "modulus": 11,
+      "sequence": "A281184",
+      "start_index": 1,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "dimension": 13,
+      "least_period": 72,
+      "minimality_witnesses": [
+        {
+          "excluded_shift": 36,
+          "index": 0,
+          "prime_divisor": 2,
+          "values": [
+            1,
+            12
+          ]
+        },
+        {
+          "excluded_shift": 24,
+          "index": 0,
+          "prime_divisor": 3,
+          "values": [
+            1,
+            9
+          ]
+        }
+      ],
+      "modulus": 13,
+      "sequence": "A281440",
+      "start_index": 0,
+      "zero_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "scope": "The finite-dimensional certificates imply the listed congruences for all subsequent indices by Cayley-Hamilton. The proof for arbitrary moduli and all odd parameters is the written argument in note.tex.",
+  "status": "pass"
+}

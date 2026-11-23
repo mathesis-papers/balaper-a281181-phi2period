@@ -1,0 +1,66 @@
+{
+  "files": {
+    "pdf": {
+      "bytes": 90698,
+      "matches_public": true,
+      "path": "paper.pdf",
+      "public_sha256": "9b199b7468a3660582032b2ab9f884212679e5ffc0098cb3746ce65f1b2acba1",
+      "sha256": "9b199b7468a3660582032b2ab9f884212679e5ffc0098cb3746ce65f1b2acba1"
+    },
+    "source": {
+      "bytes": 25404,
+      "matches_public": true,
+      "path": "source.archive",
+      "public_sha256": "47259fb164d8bc19790db869365264226baa7882b91a5ef5216dbd0cef25fdfc",
+      "sha256": "47259fb164d8bc19790db869365264226baa7882b91a5ef5216dbd0cef25fdfc"
+    }
+  },
+  "source_identity": "Mathesis public projection",
+  "work": {
+    "abstract_text": "Using finite jets, we give an alternative proof of the totient-square period conjecture in Peter Bala's comment of 16 February 2026 on OEIS A281181, revision 103, previously proved by Lien-Hung Su (2026, Theorem 3.2 and Corollary 3.3), and extend the argument to every positive integer flow exponent. For C'=C^q S, S'=C^(q+1), C(0)=1 and S(0)=0, the numbers A(q,e,n)=(2n)![t^(2n)]C(t)^e are integers for every positive integer q and nonnegative e, and A(q,e,n+phi(k)^2) is congruent to A(q,e,n) modulo k for every k>=1 and n>=k^2. The proof uses characteristic-p finite jets, commuting matrices, a separate two-adic operator and the Chinese remainder theorem. Five posed conjectures, nine further column specializations and one full-index interlacing are covered.",
+    "authors": [
+      {
+        "affiliation": "ChronoAI Pte Ltd, Singapore",
+        "name": "Haobo Ma"
+      },
+      {
+        "affiliation": "National University of Singapore; ChronoAI Pte Ltd, Singapore",
+        "name": "Wenlin Zhang"
+      }
+    ],
+    "concept_doi": null,
+    "current_version": 3,
+    "doi": null,
+    "lean_source": {
+      "revision": "92de86888730265f84e24d28bdb67546c543a966",
+      "url": "https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281181TotientSquarePeriod.lean"
+    },
+    "license": "CC-BY-4.0",
+    "msc": [],
+    "pdf": {
+      "bytes": 90698,
+      "sha256": "9b199b7468a3660582032b2ab9f884212679e5ffc0098cb3746ce65f1b2acba1",
+      "url": "/api/v1/collected-papers/balaper-a281181-phi2period/files/pdf?version=3"
+    },
+    "previous_version": null,
+    "publication": "public",
+    "published_on": "2026-11-23T07:26:51.822570133Z",
+    "record": "balaper-a281181-phi2period",
+    "repository_name": "balaper-a281181-phi2period",
+    "source": {
+      "bytes": 25404,
+      "sha256": "47259fb164d8bc19790db869365264226baa7882b91a5ef5216dbd0cef25fdfc",
+      "url": "/api/v1/collected-papers/balaper-a281181-phi2period/files/source?version=3"
+    },
+    "title": "A jet-space proof and extension of Su's theorem on Bala's totient-square period conjectures",
+    "versions": [
+      {
+        "previous_version": null,
+        "published_on": "2026-11-23T07:26:51.822570133Z",
+        "revision": "3",
+        "version": 3
+      }
+    ],
+    "work": "balaper-a281181-phi2period"
+  }
+}

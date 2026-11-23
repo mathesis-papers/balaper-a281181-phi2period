@@ -1,0 +1,411 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\ev}{\operatorname{ev}}
+\title{A jet-space proof and extension of Su's theorem on Bala's\ totient-square period conjectures}
+\author{Haobo Ma\\\small ChronoAI Pte Ltd, Singapore
+  \\[0.5em]Wenlin Zhang\\\small National University of Singapore
+  \\\small ChronoAI Pte Ltd, Singapore}
+\date{14 November 2026\\\small CC BY 4.0}
+\begin{document}
+\maketitle
+\begin{abstract}
+Using finite jets, we give an alternative proof of the totient-square period conjecture in
+Peter Bala's comment of 16 February 2026 on OEIS A281181, revision 103,
+previously proved by Lien-Hung Su (2026, Theorem 3.2 and Corollary 3.3),
+and extend the argument to every positive integer flow exponent.
+If $C=\cosh H$, $H'=C^3$ and $H(0)=0$, then the integers
+$a(n)=(2n)![t^{2n}]C(t)$ satisfy
+$a(n+\varphi(k)^2)\equiv a(n)\pmod{k}$ for every $k\geq1$ and $n\geq k^2$.
+A characteristic-$p$ derivation identity on truncated polynomial rings,
+followed by a commuting-matrix congruence, gives a self-contained proof.
+The same argument covers every nonnegative power of the series $C$
+for every positive integer exponent in $H'=C^q$, and hence four companion
+OEIS conjectures and further even-exponent specializations.
+Exact finite-dimensional certificates also recover
+the source's small-modulus examples.
+\end{abstract}
+
+\section{The source and the statement}
+Bala's conjecture asks for eventual periodicity modulo every positive
+integer, with period dividing the square of Euler's totient
+\cite{oeis181}. Here $\varphi(k)$ counts the units modulo $k$, with
+$\varphi(1)=1$; saying that a period divides $T$ means that shifting by
+$T$ preserves the sequence on a tail. Su already proves these conjectures
+and the stronger shift $\varphi(k)^2/2$ for $k\geq3$, with sharper
+preperiod bounds \cite[Theorem 3.2, Corollary 3.3]{su}.
+The present proof uses a polynomial annihilator rather than a decomposition
+into its invertible and nilpotent parts. Its bound $k^2$ is convenient,
+not an improvement on Su's bounds. The inverse-function derivative
+representation is also recorded by Bala \cite[Corollary 1]{bala}.
+The extension here removes the oddness restriction on $q$ for the
+square-totient shift. In particular it covers the even-exponent companion
+flows, but does not replace Su's stronger vanishing and $\varphi(k)$-period
+theorem for A281428 \cite[Theorem 4.1]{su}.
+
+All series below are formal power series over $\QQ$, all integrals have
+zero constant term, and $[t^j]$ denotes ordinary coefficient extraction.
+For a positive integer $q$, let $C_q,S_q$ be the unique solutions
+\begin{equation}\label{system}
+ C_q'=C_q^qS_q,\qquad S_q'=C_q^{q+1},\qquad
+ C_q(0)=1,\quad S_q(0)=0.
+\end{equation}
+Coefficients are determined successively by these equations. Differentiation
+gives $C_q^2-S_q^2=1$. Thus $H_q=\log(C_q+S_q)$ satisfies
+$H_q'=C_q^q$, $H_q(0)=0$, and $C_q=\cosh H_q$.
+Conversely these last equations, with $S_q=\sinh H_q$, give
+\eqref{system}. This identifies the defining series in A281181 when $q=3$
+and A281440 when $q=7$.
+
+\begin{samepage}
+\begin{theorem}\label{main}
+For every positive integer $q$ and integer $e\geq0$, the numbers
+\[
+ A_{q,e}(n)=(2n)![t^{2n}]C_q(t)^e\qquad(n\geq0)
+\]
+are integers. For all $k\geq1$ and $n\geq k^2$,
+\begin{equation}\label{period}
+ A_{q,e}\bigl(n+\varphi(k)^2\bigr)\equiv A_{q,e}(n)\pmod{k}.
+\end{equation}
+\end{theorem}
+\end{samepage}
+
+The primary conjecture is $(q,e)=(3,1)$. The other specializations
+\cite{oeis180,oeis183,oeis184,oeis440} are
+\begin{equation}\label{identifications}
+\begin{aligned}
+ \mathrm{A281183}(n)&=A_{3,2}(n),&
+ \mathrm{A281184}(n)&=A_{3,3}(n),\\
+ \mathrm{A281440}(n)&=A_{7,1}(n),&
+ \mathrm{A281180}(n)&=A_{3,4}(n-1)\quad(n\geq1).
+\end{aligned}
+\end{equation}
+The last identity follows from $S_3'=C_3^4$, so its sufficient bound in
+the source index is $n\geq k^2+1$.
+
+\section{A finite-jet congruence}
+For a prime $p$ and $r\geq1$ put $L=p^r$ and let $I$ denote an identity
+matrix. A jet of length $L$ is an element of the truncated polynomial
+ring $R[x]/(x^L)$.
+
+\begin{lemma}\label{jet}
+Let $B$ be an integer $L\times L$ matrix whose reduction modulo $p$ is
+the operator $P(x)\,d/dx$ on $\FF_p[x]/(x^L)$, where $P(0)=1$.
+Put $U=p^{2r-1}$ and $T=p^{2r-2}(p-1)^2$. Then
+\begin{equation}\label{annihilator}
+ B^U(B^T-I)\equiv0\pmod{p^r}.
+\end{equation}
+Consequently $B^{j+T}\equiv B^j\pmod{p^r}$ for every $j\geq U$.
+\end{lemma}
+\begin{proof}
+First work on $J=\FF_p[x]/(x^p)$ with $\delta=P\,d/dx$.
+The iterated Leibniz rule shows that $\delta^p$ is a derivation: its
+intermediate binomial coefficients vanish modulo $p$. Every derivation
+of $J$ is determined by its value on $x$, and $P$ is a unit. Hence
+$\delta^p=h\delta$ for some $h\in J$. Commuting $\delta$ with
+$\delta^p$ and applying the resulting identity to $x$ gives
+$\delta(h)P=0$. Therefore $h'=0$, and a polynomial of degree less
+than $p$ with zero derivative is constant. Write $h=\alpha\in\FF_p$.
+
+For $t=(p-1)^2$, this implies
+\begin{equation}\label{local}
+ Q(\delta):=\delta^p(\delta^t-I)=0.
+\end{equation}
+If $\alpha=0$ this is immediate. Otherwise repeated use of
+$\delta^p=\alpha\delta$ gives
+$\delta^{1+t}=\alpha^{p-1}\delta=\delta$, and multiplication by
+$\delta^{p-1}$ gives \eqref{local}. This includes $p=2$.
+
+On $\FF_p[x]/(x^L)$ consider the filtration by $(x^{jp})$, for
+$0\leq j\leq p^{r-1}$. Since $\delta(x^{jp})=0$, each successive
+quotient carries exactly the length-$p$ operator just considered.
+Thus $Q(\delta)$ moves each filtration step into the next, and
+$Q(\delta)^{p^{r-1}}=0$. Taking this power in characteristic $p$ gives
+\[
+ B^{p^r}\bigl(B^{(p-1)^2p^{r-1}}-I\bigr)\equiv0\pmod p.
+\]
+Set $u=p^r$, $v=(p-1)^2p^{r-1}$, $X=B^{u+v}$ and $Y=B^u$.
+These integer matrices commute and $X\equiv Y\pmod p$.
+The binomial theorem gives
+$X^{p^{r-1}}\equiv Y^{p^{r-1}}\pmod{p^r}$: at each step,
+raising commuting matrices congruent modulo $p^a$ to the $p$th power
+raises their congruence to modulo $p^{a+1}$, for $a\geq1$.
+This is \eqref{annihilator}. Multiplying it by $B^{j-U}$ proves
+the final assertion.
+\end{proof}
+
+\section{Proof of Theorem \ref{main}}
+On $\ZZ[c,s]$ define the integral derivation and evaluation
+\[
+ D(c)=c^qs,\qquad D(s)=c^{q+1},\qquad \ev(F)=F(1,0).
+\]
+The iterated Leibniz rule shows that
+$F\mapsto\sum_{j\geq0}\ev(D^jF)t^j/j!$ preserves products.
+Its values on $c,s$ consequently satisfy \eqref{system} and equal
+$C_q,S_q$. Replacing $(t,s)$ by $(-t,-s)$ gives the same system,
+so $C_q$ is even and $S_q$ is odd. In particular
+\begin{equation}\label{integral}
+ A_{q,e}(n)=\ev(D^{2n}c^e)\in\ZZ.
+\end{equation}
+The relation $c^2-s^2=1$ can be imposed throughout, since $D$ annihilates
+$c^2-s^2-1$ and evaluation annihilates it as well.
+
+\paragraph{Odd prime powers.}
+Fix an odd prime $p$, $r\geq1$ and $L=p^r$; let $R=\ZZ/p^r\ZZ$.
+On $J=R[y]/(y^L)$ there is a unique $b\in1+yJ$ with
+$b^2=1+y^2$: solve successive
+coefficients, dividing only by the unit $2$.
+Define $\delta=b^{q+1}d/dy$; it is well defined because the
+derivative of $y^L$ is zero in $R$. Its polynomial coefficient has
+constant term one. When $q$ is odd this coefficient is
+$(1+y^2)^{(q+1)/2}$, but the definition with $b$ works for every
+positive integer $q$.
+Differentiating this identity gives
+$\delta(b)=yb^q$ and $\delta(y)=b^{q+1}$.
+Thus the substitution $c\mapsto b$, $s\mapsto y$ intertwines $D$
+with $\delta$, and evaluation at $y=0$ corresponds to $\ev$.
+Apply Lemma \ref{jet} to an integer lift of the matrix of $\delta$.
+For $j\geq U=p^{2r-1}$,
+\[
+ \ev(D^{j+T}c^e)\equiv\ev(D^jc^e)\pmod{p^r},
+ \qquad T=\varphi(p^r)^2.
+\]
+Applying this twice with $j=2n$ shows
+$A_{q,e}(n+T)\equiv A_{q,e}(n)\pmod{p^r}$ whenever $n\geq L^2$.
+
+\paragraph{Powers of two.}
+Set $z=c-1$. Applying $D$ twice to a polynomial $f(c-1)$, and using
+$s^2=c^2-1$, gives the integer differential operator
+\begin{equation}\label{second}
+ Kf=a(z)f''+b(z)f',\qquad
+ \begin{cases}
+ a(z)=(1+z)^{2q}\bigl((1+z)^2-1\bigr),\\
+ b(z)=(q+1)(1+z)^{2q+1}-q(1+z)^{2q-1}.
+ \end{cases}
+\end{equation}
+Consequently $A_{q,e}(n)=(K^n(1+z)^e)(0)$.
+For $L=2^r$, the ideal $(z^L)$ is preserved by $K$ modulo $L$:
+the possibly surviving differentiated factors have coefficients
+$L$, $2L$ or $L(L-1)$, all divisible by $L$.
+Thus $K$ has a length-$L$ matrix modulo $L$.
+Modulo two every polynomial has zero second derivative, so this matrix
+reduces to $b(z)\,d/dz$, with $b(0)=1$.
+Lemma \ref{jet}, now with $p=2$, gives
+\[
+ A_{q,e}\bigl(n+\varphi(2^r)^2\bigr)
+ \equiv A_{q,e}(n)\pmod{2^r}\qquad(n\geq2^{2r-1}).
+\]
+
+\paragraph{An arbitrary modulus.}
+For each exact prime-power factor $p^r\Vert k$, $\varphi(p^r)$ divides
+$\varphi(k)$, by multiplicativity of the totient. Also
+$n\geq k^2$ implies $n\geq p^{2r}$.
+The preceding prime-power periods therefore divide $\varphi(k)^2$,
+with a sufficient common starting index. The Chinese remainder theorem
+proves \eqref{period}. For $k=1$ the congruence is automatic.
+\hfill$\square$
+
+\section{Companion formulas and exact examples}
+The identifications \eqref{identifications} give all five source
+conjectures. The coverage is as follows; the revision numbers identify
+the cited versions.
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+Source, revision & Column & Coverage\\
+\midrule
+A281181, 103 & $A_{3,1}(n)$ & Reproved; prior proof Su (2026)\\
+A281183, 60 & $A_{3,2}(n)$ & Reproved; prior proof Su (2026)\\
+A281184, 41 & $A_{3,3}(n)$ & Reproved; prior proof Su (2026)\\
+A281180, 86 & $A_{3,4}(n-1)$ & Reproved; prior proof Su (2026)\\
+A281440, 17 & $A_{7,1}(n)$ & Reproved; prior proof Su (2026)\\
+A281432, 10 & $A_{5,1}(n)$ & Corollary; prior theorem Su (2026)\\
+A281439, 6 & $A_{7,8}(n-1)$ & Corollary; prior theorem Su (2026)\\
+\bottomrule
+\end{tabular}
+\end{center}
+The last two entries are additional specializations
+\cite{oeis432,oeis439}: the first has $H'=C^5$, and the second has
+$S_7'=C_7^8$. Thus their sufficient source-index bounds are $k^2$
+and $k^2+1$, respectively. Both also follow from Su's general
+Theorem 3.2, with $a=q+1$ in his notation.
+\begin{corollary}\label{companions}
+The even-exponent companions in the following table satisfy the
+square-totient congruence of Theorem \ref{main}, with sufficient
+source-index bound $k^2$ for an even column and $k^2+1$ for an odd column.
+The same holds for A281431. The full-index sequence A281182 satisfies
+$a(j+2\varphi(k)^2)\equiv a(j)\pmod{k}$ for $j\geq2k^2$.
+\end{corollary}
+\begin{proof}
+For every $q$, $S_q'=C_q^{q+1}$, so
+$(2n-1)![t^{2n-1}]S_q=A_{q,q+1}(n-1)$ for $n\geq1$.
+The defining equations in the cited entries give the table's
+identifications. Apply Theorem \ref{main}.
+For A281182, its even and odd indexed terms are respectively
+$A_{3,1}(n)$ and $A_{3,4}(n)$ at indices $2n$ and $2n+1$;
+shifting both indices by $2\varphi(k)^2$ proves the assertion.
+\end{proof}
+\begin{center}\small
+\begin{tabular}{lll}
+\toprule
+Source, revision & Column & Coverage\\
+\midrule
+A281428, 54 & $A_{4,1}(n)$ & Not posed; proved (weaker than Su)\\
+A281427, 29 & $A_{4,5}(n-1)$ & Not posed; proved\\
+A281436, 10 & $A_{6,1}(n)$ & Not posed; proved\\
+A281435, 19 & $A_{6,7}(n-1)$ & Not posed; proved\\
+A281444, 9 & $A_{8,1}(n)$ & Not posed; proved\\
+A281443, 5 & $A_{8,9}(n-1)$ & Not posed; proved\\
+A281431, 6 & $A_{5,6}(n-1)$ & Corollary; prior theorem Su (2026)\\
+A281182, 32 & Interlaced $C_3+S_3$ & Not posed; proved (double shift)\\
+A281428, claims 1--2 & Vanishing; $\varphi(k)$-shift & Prior proof Su (2026)\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here ``not posed'' refers to the square-totient (or double-shift)
+congruence just stated, not to an assertion of error in the source.
+The two actual conjectures in Bala's 3 March 2026 block of A281428
+concern eventual vanishing for moduli coprime to six and an eventual
+$\varphi(k)$-period otherwise; both have prior proofs in Su's
+Theorem 4.1. They are cited, not reproved here. The source definitions
+for the further companions are \cite{oeis182,oeis427,oeis428,oeis431,
+oeis435,oeis436,oeis443,oeis444}.
+The $q=3$ recurrence recorded by Seiichi Manyama on 14 April 2026
+\cite{oeis181,oeis183,oeis184} follows directly from
+\[
+ D^2c^e=e(e+q)c^{e+2q}-e(e+q-1)c^{e+2q-2}.
+\]
+For $q=3$ this gives
+$A_{3,e}(n)=e(e+3)A_{3,e+6}(n-1)-e(e+2)A_{3,e+4}(n-1)$.
+
+One tentative formula in Bala's 22 December 2025 block of A281183 also
+has a short proof, as in Su's Proposition 3.5. Put $u(y)=1+y^2$,
+$\mathcal D=u(y)^2\,d/dy$ and $\mathcal Lf=u(y)(u(y)f)'$.
+On $\QQ[[y]]$, multiplication by $u$ is invertible and
+$\mathcal L=u^{-1}\mathcal D u$. Therefore
+$\mathcal L^{2n}1(0)=\mathcal D^{2n}u(0)$.
+Since $S_3'=u(S_3)^2$ and $u(S_3)=C_3^2$, this equals
+$A_{3,2}(n)$, proving the formula for all $n\geq0$.
+
+The following exact periods, previously given by Su
+\cite[Proposition 3.6]{su}, illustrate the distinction between a
+permitted period and the least one. The initial index specifies the
+tail whose least period is stated.
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+Sequence & Modulus & Least period & Initial index\\
+\midrule
+A281180 & 7 & 18 & 1\\
+A281181 & 10 & 8 & 0\\
+A281181 & 9 & 3 & 1\\
+A281181 & 13 & 72 & 0\\
+A281183 & 11 & 25 & 1\\
+A281184 & 11 & 25 & 1\\
+A281440 & 13 & 72 & 0\\
+\bottomrule
+\end{tabular}
+\end{center}
+These statements have finite proofs, not just matching prefixes.
+For any modulus $m\geq2$, the operator \eqref{second} preserves
+$(z^m)$ modulo $m$ by the same divisibility argument used above.
+Let $B$ be its $m\times m$ matrix. Each scalar difference
+$[z^0]B^j(B^P-I)(1+z)^e$ satisfies the monic characteristic
+recurrence of $B$. Vanishing at $m$ consecutive indices proves
+vanishing thereafter by Cayley--Hamilton, over $\ZZ/m\ZZ$ as well
+as over fields. The supplied \texttt{verify.py} gives these zero
+differences and, for each prime divisor $\ell$ of $P$, a nonzero
+difference at shift $P/\ell$. They exclude every proper divisor
+period and hence certify minimality.
+
+The same calculation proves
+\[
+ \mathrm{A281181}(n)\equiv1\pmod{12},\qquad
+ \mathrm{A281181}(n+6)\equiv7\,\mathrm{A281181}(n)\pmod{13}
+ \quad(n\geq0).
+\]
+For these identities, respectively twelve and thirteen initial scalar
+differences are zero. The second identity gives the geometric columns
+in Bala's displayed modulo-$13$ array. The broader informal statement
+about a two-dimensional layout is not needed for the period theorem;
+Su's Proposition 3.4 supplies a precise finite-difference formulation.
+Corollary \ref{companions} gives the separate double-shift statement
+for the interlacing, without confusing it with one even column.
+
+\section{Verification coverage}
+The complete proof above covers all positive integer $q$, all $e\geq0$,
+and the displayed bound $n\geq k^2$.
+At revision \texttt{92de86888730265f84e24d28bdb67546c543a966},
+the declaration \texttt{result} in each of the following Lean files
+gives the source-defined series and an eventual totient-square period:
+\begin{itemize}
+\item \href{https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281181TotientSquarePeriod.lean}{\texttt{BalaA281181TotientSquarePeriod.lean}}: A281181;
+\item \href{https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281183TotientSquarePeriod.lean}{\texttt{BalaA281183TotientSquarePeriod.lean}}: A281183;
+\item \href{https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281184TotientSquarePeriod.lean}{\texttt{BalaA281184TotientSquarePeriod.lean}}: A281184;
+\item \href{https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281180TotientSquarePeriod.lean}{\texttt{BalaA281180TotientSquarePeriod.lean}}: A281180, with its index offset;
+\item \href{https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281440TotientSquarePeriod.lean}{\texttt{BalaA281440TotientSquarePeriod.lean}}: A281440.
+\end{itemize}
+In the A281181 file, \texttt{BalaPolynomialSystem.even\_sequence\_period}
+has the uniform scope $q\in\{3,7\}$ and every $e\geq0$.
+Its statement gives an unspecified starting index; the explicit bound
+and general positive-integer-$q$ scope here come from the written proof.
+The source-specific least periods, the modulo-$12$ identity and the
+modulo-$13$ geometric relation are certified by the finite matrices
+described above. The rational-series calculation in \texttt{verify.py}
+also checks coefficient normalization against \eqref{system}.
+
+\begin{thebibliography}{99}
+\bibitem{oeis181} OEIS Foundation Inc., \emph{A281181}, revision 103,
+sequence by P. D. Hanna (2017); conjecture by P. Bala, 16 February 2026;
+recurrence by S. Manyama, 14 April 2026.
+\url{https://oeis.org/A281181}.
+\bibitem{oeis180} OEIS Foundation Inc., \emph{A281180}, revision 86,
+conjecture by P. Bala, 18 February 2026.
+\url{https://oeis.org/A281180}.
+\bibitem{oeis183} OEIS Foundation Inc., \emph{A281183}, revision 60,
+conjecture by P. Bala, 16 February 2026; derivative formula,
+22 December 2025. \url{https://oeis.org/A281183}.
+\bibitem{oeis184} OEIS Foundation Inc., \emph{A281184}, revision 41,
+conjecture by P. Bala, 16 February 2026.
+\url{https://oeis.org/A281184}.
+\bibitem{oeis440} OEIS Foundation Inc., \emph{A281440}, revision 17,
+conjecture by P. Bala, 19 February 2026.
+\url{https://oeis.org/A281440}.
+\bibitem{oeis432} OEIS Foundation Inc., \emph{A281432}, revision 10,
+18 January 2026. \url{https://oeis.org/A281432}.
+\bibitem{oeis439} OEIS Foundation Inc., \emph{A281439}, revision 6,
+1 March 2017. \url{https://oeis.org/A281439}.
+\bibitem{su} L.-H. Su, \emph{Quadratic Derivations and Uniform Modular
+Periods for Six Inverse-Function Sequences}, version 1, 31 October 2026,
+Theorem 3.2, Corollary 3.3 and Propositions 3.4--3.6.
+\url{https://doi.org/10.5281/zenodo.23835577}.
+\bibitem{bala} P. Bala, \emph{The method of Graves for computing inverse
+functions}, 26 January 2026, Corollary 1, pp. 2--3.
+\url{https://oeis.org/A281181/a281181.pdf}.
+\bibitem{oeis182} OEIS Foundation Inc., \emph{A281182}, revision 32,
+3 September 2017. \url{https://oeis.org/A281182}.
+\bibitem{oeis427} OEIS Foundation Inc., \emph{A281427}, revision 29,
+30 December 2025. \url{https://oeis.org/A281427}.
+\bibitem{oeis428} OEIS Foundation Inc., \emph{A281428}, revision 54,
+conjectures by P. Bala, 3 March 2026. \url{https://oeis.org/A281428}.
+\bibitem{oeis431} OEIS Foundation Inc., \emph{A281431}, revision 6,
+1 March 2017.
+\url{https://oeis.org/A281431}.
+\bibitem{oeis435} OEIS Foundation Inc., \emph{A281435}, revision 19,
+30 December 2025. \url{https://oeis.org/A281435}.
+\bibitem{oeis436} OEIS Foundation Inc., \emph{A281436}, revision 10,
+18 January 2026. \url{https://oeis.org/A281436}.
+\bibitem{oeis443} OEIS Foundation Inc., \emph{A281443}, revision 5,
+21 May 2017. \url{https://oeis.org/A281443}.
+\bibitem{oeis444} OEIS Foundation Inc., \emph{A281444}, revision 9,
+18 January 2026. \url{https://oeis.org/A281444}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,958 @@
+{
+  "arithmetic": "exact integers and rational numbers",
+  "schema_version": 1,
+  "scope": "The finite-dimensional certificates imply the stated tail congruences by the Cayley-Hamilton argument in note.tex; the written theorem covers every modulus.",
+  "sequences": [
+    {
+      "all_index_period_certificates": [
+        {
+          "modulus": 2,
+          "period": 1,
+          "source_start": 4,
+          "zero_differences": [
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 3,
+          "period": 4,
+          "source_start": 9,
+          "zero_differences": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 4,
+          "period": 4,
+          "source_start": 16,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 5,
+          "period": 16,
+          "source_start": 25,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 6,
+          "period": 4,
+          "source_start": 36,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 7,
+          "period": 36,
+          "source_start": 49,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 8,
+          "period": 16,
+          "source_start": 64,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 9,
+          "period": 36,
+          "source_start": 81,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 10,
+          "period": 16,
+          "source_start": 100,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 11,
+          "period": 100,
+          "source_start": 121,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 12,
+          "period": 16,
+          "source_start": 144,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 13,
+          "period": 144,
+          "source_start": 169,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 14,
+          "period": 36,
+          "source_start": 196,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 15,
+          "period": 64,
+          "source_start": 225,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "period": 64,
+          "source_start": 256,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 17,
+          "period": 256,
+          "source_start": 289,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 18,
+          "period": 36,
+          "source_start": 324,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 19,
+          "period": 324,
+          "source_start": 361,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 20,
+          "period": 64,
+          "source_start": 400,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 21,
+          "period": 144,
+          "source_start": 441,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 22,
+          "period": 100,
+          "source_start": 484,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 23,
+          "period": 484,
+          "source_start": 529,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 24,
+          "period": 64,
+          "source_start": 576,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "exact_column_index": 256,
+      "exact_value_sha256": "9b585acc2b0d1b8dbe73c7b92b6a5b1d2403cf6d9ce8ef6e10f86963f58f2028",
+      "exponent": 1,
+      "ode_agreement_column_indices": [
+        0,
+        12
+      ],
+      "parameter": 5,
+      "sequence": "A281432",
+      "source_initial_terms": 8,
+      "source_offset": 0
+    },
+    {
+      "all_index_period_certificates": [
+        {
+          "modulus": 2,
+          "period": 1,
+          "source_start": 5,
+          "zero_differences": [
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 3,
+          "period": 4,
+          "source_start": 10,
+          "zero_differences": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 4,
+          "period": 4,
+          "source_start": 17,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 5,
+          "period": 16,
+          "source_start": 26,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 6,
+          "period": 4,
+          "source_start": 37,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 7,
+          "period": 36,
+          "source_start": 50,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 8,
+          "period": 16,
+          "source_start": 65,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 9,
+          "period": 36,
+          "source_start": 82,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 10,
+          "period": 16,
+          "source_start": 101,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 11,
+          "period": 100,
+          "source_start": 122,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 12,
+          "period": 16,
+          "source_start": 145,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 13,
+          "period": 144,
+          "source_start": 170,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 14,
+          "period": 36,
+          "source_start": 197,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 15,
+          "period": 64,
+          "source_start": 226,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 16,
+          "period": 64,
+          "source_start": 257,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 17,
+          "period": 256,
+          "source_start": 290,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 18,
+          "period": 36,
+          "source_start": 325,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 19,
+          "period": 324,
+          "source_start": 362,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 20,
+          "period": 64,
+          "source_start": 401,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 21,
+          "period": 144,
+          "source_start": 442,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 22,
+          "period": 100,
+          "source_start": 485,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 23,
+          "period": 484,
+          "source_start": 530,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "modulus": 24,
+          "period": 64,
+          "source_start": 577,
+          "zero_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "exact_column_index": 256,
+      "exact_value_sha256": "211a8ef2eb93dbfd239297343f7e949b34656da8c862289216166f621f05ef7c",
+      "exponent": 8,
+      "ode_agreement_column_indices": [
+        0,
+        12
+      ],
+      "parameter": 7,
+      "sequence": "A281439",
+      "source_initial_terms": 8,
+      "source_offset": 1
+    }
+  ],
+  "status": "pass"
+}
