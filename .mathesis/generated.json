@@ -27,7 +27,7 @@
     "CONTRIBUTING.md": "fafd66e63160b2a88f433af56d2af2b0f7bf6ed2fd417d46b54446ce07c627ff",
     "LICENSES/CC-BY-4.0.txt": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
     "README.md": "6850a5d8edaab1b5d5168893dde84957b3a95fee0fc1406a5526d490a82da0a0",
-    "formalization/nodes.json": "3f7dae608beebf947dfa5968d513ca7feb67b2681e232002f7034677e1c70196",
+    "formalization/nodes.json": "e5dac8ada7f5f6bcfca5d4bc43b80bc4cf0aed5866ff1d376933846cf101ee23",
     "manuscript/bala-totient-square-periods-v3/MANIFEST.sha256": "1528abc7a3f269b1311f817bc9f45893ed84da5482279c519e7ff6e378b3c521",
     "manuscript/bala-totient-square-periods-v3/README.md": "0bcc21e3c7a5ac668915f364303976df413281b3de45cb4ed8ec7162f3967536",
     "manuscript/bala-totient-square-periods-v3/check-results.json": "3dc2e09a05c3371dba3e66ec3ef00bc419737dd0201f2c4e4f1616b8607df87c",
@@ -42,5 +42,5 @@
     "paper.pdf": "9b199b7468a3660582032b2ab9f884212679e5ffc0098cb3746ce65f1b2acba1",
     "source.archive": "47259fb164d8bc19790db869365264226baa7882b91a5ef5216dbd0cef25fdfc"
   },
-  "snapshot_identity": "f64b32df809fea6e19de686ce8dcafbb012b15bbce1f3c64161cad090822b6e3"
+  "snapshot_identity": "03498afdee111b54d0e028fad4e4403e25426ad39ed294a645a6f0a1aa9b2de0"
 }
