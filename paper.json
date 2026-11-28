@@ -31,6 +31,7 @@
     "concept_doi": "10.5281/zenodo.24411943",
     "current_version": 3,
     "doi": "10.5281/zenodo.24411944",
+    "kind": "note",
     "lean_source": {
       "revision": "92de86888730265f84e24d28bdb67546c543a966",
       "url": "https://github.com/the-omega-institute/trureturing/blob/92de86888730265f84e24d28bdb67546c543a966/D5/S1/Recurrence/Periodic/BalaA281181TotientSquarePeriod.lean"
@@ -55,10 +56,12 @@
     "title": "A jet-space proof and extension of Su's theorem on Bala's totient-square period conjectures",
     "versions": [
       {
+        "changelog": null,
         "previous_version": null,
         "published_on": "2026-11-23T07:26:51.822570133Z",
         "revision": "3",
-        "version": 3
+        "version": 3,
+        "version_label": null
       }
     ],
     "work": "balaper-a281181-phi2period"
